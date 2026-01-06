@@ -1,0 +1,23 @@
+name: CMate
+
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+
+  release:
+
+    name: Release CMate
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2.5.0
+        with:
+          files: cmate_*.tar.gz
