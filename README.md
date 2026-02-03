@@ -1,6 +1,6 @@
 # CMate, Yet another C build system
 
-Did You just misspelled CMake and got here?
+Did You just misspell CMake and got here?
 
 No problem, You are on the right way.
 
